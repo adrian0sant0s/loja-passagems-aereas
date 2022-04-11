@@ -196,6 +196,7 @@ a {
   width: 300px;
   border-radius: 5px;
   padding-left: 10px;
+  outline: none;
 }
 
 .hotels-period p {
@@ -209,6 +210,7 @@ a {
   width: 190px;
   padding: 10px;
   border-radius: 5px;
+  outline: none;
 }
 
 .hotels-people p {
@@ -222,6 +224,7 @@ a {
   width: 120px;
   padding: 20px;
   border-radius: 5px;
+  outline: none;
 }
 
 #button-hotels {
@@ -237,4 +240,68 @@ a {
 #button-hotels:hover {
   cursor: pointer;
   height: 45px;
+}
+
+/* ajuda */
+
+#help {
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.help-container {
+  height: 100px;
+  width: 70%;
+  background-color: rgb(233, 70, 6);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.help-container input {
+  height: 45px;
+  width: 80%;
+  border-radius: 5px;
+  border: none;
+  font-size: 17px;
+  outline: none;
+}
+
+.help-container input:empty {
+  padding-left: 20px;
+}
+
+.categories {
+  text-align: center;
+  font-size: 25px;
+  margin: 30px auto;
+}
+
+.container-search {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 40px;
+  gap: 20px;
+}
+
+.container-help {
+  border: rgb(250, 154, 116) solid 3px;
+  width: 300px;
+  padding: 30px;
+  text-align: center;
+}
+
+.container-help h2 {
+  color: rgb(233, 70, 6);
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgb(233, 70, 6);
+}
+
+.container-help p {
+  font-size: 1.3rem;
 }
