@@ -9,6 +9,17 @@ a {
   text-decoration: none;
 }
 
+.headline {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  /* margin-top: 10px; */
+  padding: 15px;
+  color: rgb(204, 61, 5);
+}
+
 #navbar {
   position: fixed;
   top: 0;
@@ -85,24 +96,18 @@ a {
 
 #sale {
   height: 100vh;
-  margin: 50px;
-  /* padding-top: 70px; */
-}
-
-.headline {
-  font-size: 2.2rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center;
-  letter-spacing: 2px;
-  /* margin-top: 10px; */
-  padding: 15px;
-  color: rgb(204, 61, 5);
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .item-sale {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .container-sale {
@@ -156,4 +161,80 @@ a {
   font-weight: bold;
   padding: 5px;
   border-radius: 10px;
+}
+
+/* hotels */
+
+#hotels {
+  height: 100vh;
+  background: url(./assets/Hotel-.jpg) center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container-hotels {
+  height: 400px;
+  width: 80%;
+  background-color: #eee;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.hotels-destiny p {
+  font-size: 1.4rem;
+  text-align: center;
+  color: rgb(233, 70, 6);
+}
+
+.hotels-destiny input {
+  height: 40px;
+  width: 300px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.hotels-period p {
+  font-size: 1.4rem;
+  text-align: center;
+  color: rgb(233, 70, 6);
+}
+
+.hotels-period input {
+  height: 40px;
+  width: 190px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.hotels-people p {
+  font-size: 1.4rem;
+  text-align: center;
+  color: rgb(233, 70, 6);
+}
+
+.hotels-people input {
+  height: 40px;
+  width: 120px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#button-hotels {
+  height: 40px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(233, 70, 6);
+  color: white;
+  font-size: 15px;
+  border: none;
+}
+
+#button-hotels:hover {
+  cursor: pointer;
+  height: 45px;
 }
